@@ -14,12 +14,13 @@
 		F6723BCB2622C20300CF5974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6723BC92622C20300CF5974 /* LaunchScreen.storyboard */; };
 		F6723BD62622C20300CF5974 /* DropViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BD52622C20300CF5974 /* DropViewerTests.swift */; };
 		F6723BE12622C20300CF5974 /* DropViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BE02622C20300CF5974 /* DropViewerUITests.swift */; };
-		F6723BF82622CBE200CF5974 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BF72622CBE200CF5974 /* ListCollectionViewController.swift */; };
+		F6723BF82622CBE200CF5974 /* MoviesListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BF72622CBE200CF5974 /* MoviesListCollectionViewController.swift */; };
 		F6723C082622CC9B00CF5974 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C072622CC9B00CF5974 /* NetworkServices.swift */; };
 		F6723C112622CF6600CF5974 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C102622CF6600CF5974 /* Movies.swift */; };
 		F6723C172622D1FD00CF5974 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C162622D1FD00CF5974 /* MoviesViewModel.swift */; };
 		F6723C23262312FE00CF5974 /* MoviesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C22262312FE00CF5974 /* MoviesCellViewModel.swift */; };
 		F6723C3C2623197E00CF5974 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C3B2623197E00CF5974 /* MoviesCollectionViewCell.swift */; };
+		F6723C5A2623402700CF5974 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C592623402700CF5974 /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +54,13 @@
 		F6723BDC2622C20300CF5974 /* DropViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6723BE02622C20300CF5974 /* DropViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewerUITests.swift; sourceTree = "<group>"; };
 		F6723BE22622C20300CF5974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6723BF72622CBE200CF5974 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
+		F6723BF72622CBE200CF5974 /* MoviesListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListCollectionViewController.swift; sourceTree = "<group>"; };
 		F6723C072622CC9B00CF5974 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		F6723C102622CF6600CF5974 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		F6723C162622D1FD00CF5974 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		F6723C22262312FE00CF5974 /* MoviesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCellViewModel.swift; sourceTree = "<group>"; };
 		F6723C3B2623197E00CF5974 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoviesCollectionViewCell.swift; path = CellViews/MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6723C592623402700CF5974 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +155,8 @@
 		F6723C032622CC7600CF5974 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6723BF72622CBE200CF5974 /* ListCollectionViewController.swift */,
+				F6723BF72622CBE200CF5974 /* MoviesListCollectionViewController.swift */,
+				F6723C592623402700CF5974 /* MovieDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,9 +326,10 @@
 			files = (
 				F6723C112622CF6600CF5974 /* Movies.swift in Sources */,
 				F6723C172622D1FD00CF5974 /* MoviesViewModel.swift in Sources */,
+				F6723C5A2623402700CF5974 /* MovieDetailsViewController.swift in Sources */,
 				F6723BBF2622C1FA00CF5974 /* AppDelegate.swift in Sources */,
 				F6723C3C2623197E00CF5974 /* MoviesCollectionViewCell.swift in Sources */,
-				F6723BF82622CBE200CF5974 /* ListCollectionViewController.swift in Sources */,
+				F6723BF82622CBE200CF5974 /* MoviesListCollectionViewController.swift in Sources */,
 				F6723BC12622C1FA00CF5974 /* SceneDelegate.swift in Sources */,
 				F6723C23262312FE00CF5974 /* MoviesCellViewModel.swift in Sources */,
 				F6723C082622CC9B00CF5974 /* NetworkServices.swift in Sources */,

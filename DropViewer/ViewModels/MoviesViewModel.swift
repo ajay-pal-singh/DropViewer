@@ -20,6 +20,7 @@ class MoviesViewModel: NSObject {
         }
     }
     
+    // Handling cell view data
     public func cellViewModel(index: Int) -> MoviesCellViewModel? {
           guard let movies = movies else { return nil }
         let moviesCellViewModel = MoviesCellViewModel(movieDetail: movies.moviesList[index])

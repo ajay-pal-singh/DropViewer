@@ -9,11 +9,16 @@ import UIKit
 
 private let reuseIdentifier = "listCell"
 
-class ListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class MoviesListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var loading: UIActivityIndicatorView!
+    
+
     private var moviesViewModel = MoviesViewModel()
     var noOfCellsInRow = 3
+    
+    // Variable for passing data to detail View
+    var movieCellModel:MoviesCellViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +34,6 @@ class ListCollectionViewController: UICollectionViewController, UICollectionView
 
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -57,14 +52,16 @@ class ListCollectionViewController: UICollectionViewController, UICollectionView
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? MoviesCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
+
         cell.moviesModel = moviesViewModel.cellViewModel(index: indexPath.row)
-        
+
         return cell
     }
 
     // MARK: UICollectionViewCellSizeCalculation
     
+    /* These two methods are used to handle cell size and numbers along with rotation logic*/
+
     func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -87,33 +84,18 @@ class ListCollectionViewController: UICollectionViewController, UICollectionView
 
     // MARK: UICollectionViewDelegate
 
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
 
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        movieCellModel = moviesViewModel.cellViewModel(index: indexPath.row)
+        self.performSegue(withIdentifier: "showDetails", sender: self)
     }
 
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destionationViewController = segue.destination as? MovieDetailsViewController {
+            
+            destionationViewController.movieDetails = movieCellModel
+        }
 
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
     }
-    */
-
 }

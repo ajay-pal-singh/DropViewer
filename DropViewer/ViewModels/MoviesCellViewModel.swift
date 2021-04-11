@@ -9,8 +9,10 @@ import Foundation
 
 class MoviesCellViewModel {
     
-//    private let movies: Movies
+    // Handling each movie data
+    
     private let movieDetail: MoviesData
+    
     
     init(movieDetail: MoviesData) {
            self.movieDetail = movieDetail
@@ -22,6 +24,18 @@ class MoviesCellViewModel {
     
     var imageUrl:String? {
         return movieDetail.imageUrl
+    }
+    
+    var rating:String? {
+        if let mRating = movieDetail.rating{
+            return  String(mRating)
+        }else{
+            return "Not Available"
+        }
+    }
+    
+    var releaseDate:String? {
+        return movieDetail.releaseDate
     }
     
 }
