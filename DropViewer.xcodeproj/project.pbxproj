@@ -13,7 +13,6 @@
 		F6723BC82622C20300CF5974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6723BC72622C20300CF5974 /* Assets.xcassets */; };
 		F6723BCB2622C20300CF5974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6723BC92622C20300CF5974 /* LaunchScreen.storyboard */; };
 		F6723BD62622C20300CF5974 /* DropViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BD52622C20300CF5974 /* DropViewerTests.swift */; };
-		F6723BE12622C20300CF5974 /* DropViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BE02622C20300CF5974 /* DropViewerUITests.swift */; };
 		F6723BF82622CBE200CF5974 /* MoviesListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723BF72622CBE200CF5974 /* MoviesListCollectionViewController.swift */; };
 		F6723C082622CC9B00CF5974 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C072622CC9B00CF5974 /* NetworkServices.swift */; };
 		F6723C112622CF6600CF5974 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C102622CF6600CF5974 /* Movies.swift */; };
@@ -21,17 +20,12 @@
 		F6723C23262312FE00CF5974 /* MoviesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C22262312FE00CF5974 /* MoviesCellViewModel.swift */; };
 		F6723C3C2623197E00CF5974 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C3B2623197E00CF5974 /* MoviesCollectionViewCell.swift */; };
 		F6723C5A2623402700CF5974 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6723C592623402700CF5974 /* MovieDetailsViewController.swift */; };
+		F6A00D922625C70300940AE5 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A00D912625C70300940AE5 /* movies.json */; };
+		F6A00D9B2625CD6200940AE5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A00D9A2625CD6200940AE5 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F6723BD22622C20300CF5974 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F6723BB32622C1FA00CF5974 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6723BBA2622C1FA00CF5974;
-			remoteInfo = DropViewer;
-		};
-		F6723BDD2622C20300CF5974 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F6723BB32622C1FA00CF5974 /* Project object */;
 			proxyType = 1;
@@ -51,9 +45,6 @@
 		F6723BD12622C20300CF5974 /* DropViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6723BD52622C20300CF5974 /* DropViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewerTests.swift; sourceTree = "<group>"; };
 		F6723BD72622C20300CF5974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6723BDC2622C20300CF5974 /* DropViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6723BE02622C20300CF5974 /* DropViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewerUITests.swift; sourceTree = "<group>"; };
-		F6723BE22622C20300CF5974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6723BF72622CBE200CF5974 /* MoviesListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListCollectionViewController.swift; sourceTree = "<group>"; };
 		F6723C072622CC9B00CF5974 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		F6723C102622CF6600CF5974 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -61,6 +52,8 @@
 		F6723C22262312FE00CF5974 /* MoviesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCellViewModel.swift; sourceTree = "<group>"; };
 		F6723C3B2623197E00CF5974 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoviesCollectionViewCell.swift; path = CellViews/MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6723C592623402700CF5974 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		F6A00D912625C70300940AE5 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		F6A00D9A2625CD6200940AE5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +71,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6723BD92622C20300CF5974 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,7 +79,6 @@
 			children = (
 				F6723BBD2622C1FA00CF5974 /* DropViewer */,
 				F6723BD42622C20300CF5974 /* DropViewerTests */,
-				F6723BDF2622C20300CF5974 /* DropViewerUITests */,
 				F6723BBC2622C1FA00CF5974 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,7 +88,6 @@
 			children = (
 				F6723BBB2622C1FA00CF5974 /* DropViewer.app */,
 				F6723BD12622C20300CF5974 /* DropViewerTests.xctest */,
-				F6723BDC2622C20300CF5974 /* DropViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,18 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				F6723BD52622C20300CF5974 /* DropViewerTests.swift */,
+				F6A00D992625CD3B00940AE5 /* Data */,
+				F6A00DA22625CD7000940AE5 /* Extensions */,
 				F6723BD72622C20300CF5974 /* Info.plist */,
 			);
 			path = DropViewerTests;
-			sourceTree = "<group>";
-		};
-		F6723BDF2622C20300CF5974 /* DropViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F6723BE02622C20300CF5974 /* DropViewerUITests.swift */,
-				F6723BE22622C20300CF5974 /* Info.plist */,
-			);
-			path = DropViewerUITests;
 			sourceTree = "<group>";
 		};
 		F6723C022622CC6A00CF5974 /* Common */ = {
@@ -194,6 +171,22 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		F6A00D992625CD3B00940AE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6A00D912625C70300940AE5 /* movies.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F6A00DA22625CD7000940AE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6A00D9A2625CD6200940AE5 /* Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,24 +225,6 @@
 			productReference = F6723BD12622C20300CF5974 /* DropViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F6723BDB2622C20300CF5974 /* DropViewerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F6723BEB2622C20300CF5974 /* Build configuration list for PBXNativeTarget "DropViewerUITests" */;
-			buildPhases = (
-				F6723BD82622C20300CF5974 /* Sources */,
-				F6723BD92622C20300CF5974 /* Frameworks */,
-				F6723BDA2622C20300CF5974 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F6723BDE2622C20300CF5974 /* PBXTargetDependency */,
-			);
-			name = DropViewerUITests;
-			productName = DropViewerUITests;
-			productReference = F6723BDC2622C20300CF5974 /* DropViewerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,10 +238,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					F6723BD02622C20300CF5974 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = F6723BBA2622C1FA00CF5974;
-					};
-					F6723BDB2622C20300CF5974 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = F6723BBA2622C1FA00CF5974;
 					};
@@ -287,7 +258,6 @@
 			targets = (
 				F6723BBA2622C1FA00CF5974 /* DropViewer */,
 				F6723BD02622C20300CF5974 /* DropViewerTests */,
-				F6723BDB2622C20300CF5974 /* DropViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,13 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6723BDA2622C20300CF5974 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F6A00D922625C70300940AE5 /* movies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,14 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6723BD62622C20300CF5974 /* DropViewerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6723BD82622C20300CF5974 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6723BE12622C20300CF5974 /* DropViewerUITests.swift in Sources */,
+				F6A00D9B2625CD6200940AE5 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,11 +316,6 @@
 			isa = PBXTargetDependency;
 			target = F6723BBA2622C1FA00CF5974 /* DropViewer */;
 			targetProxy = F6723BD22622C20300CF5974 /* PBXContainerItemProxy */;
-		};
-		F6723BDE2622C20300CF5974 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F6723BBA2622C1FA00CF5974 /* DropViewer */;
-			targetProxy = F6723BDD2622C20300CF5974 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -585,46 +537,6 @@
 			};
 			name = Release;
 		};
-		F6723BEC2622C20300CF5974 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RPJ9327GU2;
-				INFOPLIST_FILE = DropViewerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.digital.DropViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DropViewer;
-			};
-			name = Debug;
-		};
-		F6723BED2622C20300CF5974 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RPJ9327GU2;
-				INFOPLIST_FILE = DropViewerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.digital.DropViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DropViewer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,15 +563,6 @@
 			buildConfigurations = (
 				F6723BE92622C20300CF5974 /* Debug */,
 				F6723BEA2622C20300CF5974 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F6723BEB2622C20300CF5974 /* Build configuration list for PBXNativeTarget "DropViewerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F6723BEC2622C20300CF5974 /* Debug */,
-				F6723BED2622C20300CF5974 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
