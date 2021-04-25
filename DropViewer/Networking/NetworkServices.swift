@@ -43,7 +43,7 @@ class NetworkServices {
         }
         dataTask.resume()
     }
-    
+
 }
 
 extension UIImageView {
@@ -61,6 +61,7 @@ extension UIImageView {
             }
         }.resume()
     }
+
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)

@@ -12,13 +12,13 @@ private let reuseIdentifier = "listCell"
 class MoviesListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var loading: UIActivityIndicatorView!
-    
+
 
     private var moviesViewModel = MoviesViewModel()
     var noOfCellsInRow = 3
-    
+
     // Variable for passing data to detail View
-    var movieCellModel:MoviesCellViewModel?
+    var movieCellModel: MoviesCellViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,6 @@ class MoviesListCollectionViewController: UICollectionViewController, UICollecti
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(moviesViewModel.count)
         return moviesViewModel.count
     }
 
@@ -59,7 +58,7 @@ class MoviesListCollectionViewController: UICollectionViewController, UICollecti
     }
 
     // MARK: UICollectionViewCellSizeCalculation
-    
+
     /* These two methods are used to handle cell size and numbers along with rotation logic*/
 
     func collectionView(_ collectionView: UICollectionView,
@@ -93,7 +92,7 @@ class MoviesListCollectionViewController: UICollectionViewController, UICollecti
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destionationViewController = segue.destination as? MovieDetailsViewController {
-            
+
             destionationViewController.movieDetails = movieCellModel
         }
 
